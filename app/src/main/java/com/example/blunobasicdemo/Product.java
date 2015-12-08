@@ -7,14 +7,33 @@ public class Product{
     String description;
     int image;
     int id_tag;
+    int quantity = 0;
 
-    public Product( String name, float price, String description, int image){
+    public Product( String name, float price, String description, int image, int quantity){
 
         this.name = name;
         this.price = price;
         this.description = description;
         this.image = image;
 
+        this.quantity = quantity;
+
+    }
+
+    public int getId_tag() {
+        return id_tag;
+    }
+
+    public void setId_tag(int id_tag) {
+        this.id_tag = id_tag;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public String getDescription() {
